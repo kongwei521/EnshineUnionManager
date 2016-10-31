@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EnshineUnion" Class="EnshineUnionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=60.208.140.170;Initial Catalog=EnshineUnion;Persist Security Info=True;User ID=iZ28gi6blpfZ@123456a?" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EnshineUnionConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.areas" Member="areas">
+    <Type Name="areas">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="areaname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="parentid" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="shortname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="lng" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="lat" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="[level]" Member="level" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="sort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.extractlist" Member="extractlist">
+    <Type Name="extractlist">
+      <Column Name="extlistid" Type="System.String" DbType="VarChar(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="extlistinfo" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="createtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.memberextract" Member="memberextract">
+    <Type Name="memberextract">
+      <Column Name="extno" Type="System.String" DbType="VarChar(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="exttel" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="extuserid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="extmoney" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="extcontent" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="exttime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="extcardno" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.memberset" Member="memberset">
+    <Type Name="memberset">
+      <Column Name="memberid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="membername" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="discount" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.noticessort" Member="noticessort">
+    <Type Name="noticessort">
+      <Column Name="sortId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sortName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.orders" Member="orders">
+    <Type Name="orders">
+      <Column Name="orderno" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="orderprice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ordersource" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="paymode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="buyername" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ordertime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="paymenttime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="orderstatus" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="shippindtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="expressmode" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="expressno" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.plantdoctor" Member="plantdoctor">
+    <Type Name="plantdoctor">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="img" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="content" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="validate" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="plantdoctorsort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="setindex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.plantdoctorsort" Member="plantdoctorsort">
+    <Type Name="plantdoctorsort">
+      <Column Name="sortId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sortName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="sortImg" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="sortFatherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sortSonId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sortPath" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userrecharge" Member="userrecharge">
+    <Type Name="userrecharge">
+      <Column Name="recno" Type="System.String" DbType="VarChar(18) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tel" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="recmoney" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="content" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="validate" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="getrecuserid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.shopset" Member="shopset">
+    <Type Name="shopset">
+      <Column Name="shopCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="shopname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="shopimg" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="shoptel" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="shopcontent" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="shopphone" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="shopactive" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="shippingtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.goodssort" Member="goodssort">
+    <Type Name="goodssort">
+      <Column Name="sortId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sortName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sortFatherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sortSonId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sortPath" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Advertisement" Member="Advertisement">
+    <Type Name="Advertisement">
+      <Column Name="AdID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AdTitle" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="AdImg" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="AdContent" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Company" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="setindex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="goodscode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.moenydetails" Member="moenydetails">
+    <Type Name="moenydetails">
+      <Column Name="moneycode" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="money" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="moneyreason" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="moneytime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="orderno" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="recno" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="getrecuserid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pointdetails" Member="pointdetails">
+    <Type Name="pointdetails">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="getpoint" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="getpointreason" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="getpointtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="recno" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.menulist" Member="menulist">
+    <Type Name="menulist">
+      <Column Name="menuid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="menuname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fathermenuid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="menulink" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="isshow" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="menuicon" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sortid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.superadmin" Member="superadmin">
+    <Type Name="superadmin">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="pass" Type="System.String" DbType="NChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="lastloginip" Type="System.String" DbType="NChar(32)" CanBeNull="true" />
+      <Column Name="lastlogintime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="roleid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="partid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ifdisable" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="truename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="contacttel" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userrole" Member="userrole">
+    <Type Name="userrole">
+      <Column Name="roleid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rolename" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="roledescribe" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="powerid" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.noticesdiscuss" Member="noticesdiscuss">
+    <Type Name="noticesdiscuss">
+      <Column Name="discussid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="noticeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="discusscontent" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="discusstime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="discussuserid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.noticeslikes" Member="noticeslikes">
+    <Type Name="noticeslikes">
+      <Column Name="likeid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="noticeid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="liketime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="likeuserid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.notices" Member="notices">
+    <Type Name="notices">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="img" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="img1" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="img2" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="content" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="validate" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="newssort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="newssource" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="setindex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="browses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="discussnum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="likenum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HuoDongSort" Member="HuoDongSort">
+    <Type Name="HuoDongSort">
+      <Column Name="sortId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sortName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.JoinHuoDong" Member="JoinHuoDong">
+    <Type Name="JoinHuoDong">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="huodongid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ticketid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.JoinHuoDongInfo" Member="JoinHuoDongInfo">
+    <Type Name="JoinHuoDongInfo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="huodongid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="huodongsort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="joinname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="jointel" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="joinsex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="age" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="joinnumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="job" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="interest" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HuoDong" Member="HuoDong">
+    <Type Name="HuoDong">
+      <Column Name="huodongId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="huodongTitle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="huodongPeople" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="huodongKeyWord" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="huodongDate" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="huodongImg" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="huodongContent" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="huodongActive" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="setindex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="addTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="huodongsort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ordersdetails" Member="ordersdetails">
+    <Type Name="ordersdetails">
+      <Column Name="ordersid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="orderno" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="orderprice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ordertime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="buygoodsid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="buysumqty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="goodsprice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="goodscost" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="goodgoldprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="goodsilverprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="goodshipstatus" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="goodshipno" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="selectytsort" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.goods" Member="goods">
+    <Type Name="goods">
+      <Column Name="goodsId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="goodstitle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="goodsimg" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="goodscontent" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="goodsvalidate" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="goodssort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="setindex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="goodsPeople" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="goodsEndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="goodsSales" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="goodsprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="goodscode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="memberdiscount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Goodsweight" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Expressset" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="exchangepoint" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ifexchange" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="getgoodpoint" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tichengpoint" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="goodstock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="goodscost" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="goodgoldprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="goodsilverprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="xiangounumber" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ifxiangou" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="goodsspec" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="goodscompany" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="iftuangou" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="expiredate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="selectytsort" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserInfo" Member="UserInfo">
+    <Type Name="UserInfo">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nickname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="pass" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="tel" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="sex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="headimg" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="areacity" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="usertype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="useractive" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="invitedcode" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="usersafe" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="fenxiaoid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fenxiaosort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="housemoney" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="point" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="lastloginip" Type="System.String" DbType="NChar(32)" CanBeNull="true" />
+      <Column Name="lastlogintime" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="cardno" Type="System.String" DbType="VarChar(19)" CanBeNull="true" />
+      <Column Name="plantnum" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="homenum" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="homeinfo" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="plantsort" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="cardimg" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="fenhongmoney" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="shopset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="paypassword" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="highestgudong" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="juese" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="gudongjibie" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="suozhangufen" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="xiangzhen" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="shangjigudong" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="shangjizhanzhang" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+      <Column Name="xiangcun" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="birthday" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.goodstuan" Member="goodstuan">
+    <Type Name="goodstuan">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="img" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="imgtwo" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="content" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="starttime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="endtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="validate" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="costprice" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="weight" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="shopid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="batch" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="community" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tuansummary" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="tuansummary1" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="tuansummary2" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="setindex" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="groupsort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="groupsortimg" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="selectytsort" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="goodscode" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="tichengpoint" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="getgoodpoint" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.goodtypelikes" Member="goodtypelikes">
+    <Type Name="goodtypelikes">
+      <Column Name="browserid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="goodstype" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="browsertime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="browseruser" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.messageview" Member="messageview">
+    <Type Name="messageview">
+      <Column Name="messageid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="messageuserid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="messagename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="messagetel" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="messagetime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="messagecontent" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.goodspackage" Member="goodspackage">
+    <Type Name="goodspackage">
+      <Column Name="goodsId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="goodstitle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="goodsimg" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="goodscontent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="goodsvalidate" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="goodssort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="setindex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="addtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="goodsPeople" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="goodsEndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="goodsSales" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="goodsprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="goodscode" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="memberdiscount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Goodsweight" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Expressset" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="exchangepoint" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ifexchange" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="getgoodpoint" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tichengpoint" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="goodstock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="goodscost" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="goodgoldprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="goodsilverprice" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="xiangounumber" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ifxiangou" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="goodsspec" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="goodscompany" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="iftuangou" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="expiredate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="selectytsort" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

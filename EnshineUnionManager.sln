@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnshineUnionManager", "EnshineUnionManager\EnshineUnionManager.csproj", "{5776DD0F-9C05-464B-854D-D8D9C12BDA02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnshineUnionServer", "EnshineUnionServer\EnshineUnionServer.csproj", "{FEBC8DBA-5DFE-4B61-803F-659262B78FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUtility", "DBUtility\DBUtility.csproj", "{CD1418B0-CD26-4CDD-ACDF-1E5225770E19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5776DD0F-9C05-464B-854D-D8D9C12BDA02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5776DD0F-9C05-464B-854D-D8D9C12BDA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5776DD0F-9C05-464B-854D-D8D9C12BDA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5776DD0F-9C05-464B-854D-D8D9C12BDA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBC8DBA-5DFE-4B61-803F-659262B78FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBC8DBA-5DFE-4B61-803F-659262B78FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBC8DBA-5DFE-4B61-803F-659262B78FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBC8DBA-5DFE-4B61-803F-659262B78FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1418B0-CD26-4CDD-ACDF-1E5225770E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1418B0-CD26-4CDD-ACDF-1E5225770E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1418B0-CD26-4CDD-ACDF-1E5225770E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1418B0-CD26-4CDD-ACDF-1E5225770E19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

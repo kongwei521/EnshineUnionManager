@@ -1,0 +1,2305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5776DD0F-9C05-464B-854D-D8D9C12BDA02}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnshineUnionManager</RootNamespace>
+    <AssemblyName>EnshineUnionManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdManager.aspx" />
+    <Content Include="AdminEditInfo.aspx" />
+    <Content Include="AdminManager.aspx" />
+    <Content Include="appdata\EnshineUnion.mdf" />
+    <Content Include="assets\css\customizer.css" />
+    <Content Include="assets\css\daterangepicker.css" />
+    <Content Include="assets\css\Dialog.1.0.css" />
+    <Content Include="assets\css\echartsHome.css" />
+    <Content Include="assets\css\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="assets\css\fonts\icomoon\style.css" />
+    <Content Include="assets\css\icons.css" />
+    <Content Include="assets\css\jquery.datetimepicker.css" />
+    <Content Include="assets\css\jquery.datetimepicker1.css" />
+    <Content Include="assets\css\layout.css" />
+    <Content Include="assets\css\main-style.css" />
+    <Content Include="assets\css\niceforms-default.css" />
+    <Content Include="assets\css\sharelink.css" />
+    <Content Include="assets\css\statistic.css" />
+    <Content Include="assets\css\ui.css" />
+    <Content Include="assets\css\utils.css" />
+    <Content Include="assets\css\widget.css" />
+    <Content Include="assets\images\0.png" />
+    <Content Include="assets\images\bg.jpg" />
+    <Content Include="assets\images\bodyBg.jpg" />
+    <Content Include="assets\images\bodyBg2.jpg" />
+    <Content Include="assets\images\bodyBg3.jpg" />
+    <Content Include="assets\images\button-left.gif" />
+    <Content Include="assets\images\button-right.gif" />
+    <Content Include="assets\images\button.gif" />
+    <Content Include="assets\images\Chrome.png" />
+    <Content Include="assets\images\dt\sort.png" />
+    <Content Include="assets\images\dt\sort_asc.png" />
+    <Content Include="assets\images\dt\sort_asc_d.png" />
+    <Content Include="assets\images\dt\sort_desc.png" />
+    <Content Include="assets\images\dt\sort_desc_d.png" />
+    <Content Include="assets\images\firefox.png" />
+    <Content Include="assets\images\footer_bg.jpg" />
+    <Content Include="assets\images\gbRes_1.png" />
+    <Content Include="assets\images\gbRes_2.png" />
+    <Content Include="assets\images\gbRes_3.png" />
+    <Content Include="assets\images\gbRes_4.png" />
+    <Content Include="assets\images\gbRes_5.png" />
+    <Content Include="assets\images\gbRes_6.png" />
+    <Content Include="assets\images\help.png" />
+    <Content Include="assets\images\icons\iconsweets\icos-dark.png" />
+    <Content Include="assets\images\icons\iconsweets\icos-white.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\abacus.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\acces-denied-sign.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\address-book.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\admin-user-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\admin-user.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\airplane.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\alarm-bell-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\alarm-bell.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\alarm-clock.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\alert-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\alert.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\android.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\apartment-building.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\archive.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\balloons.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bandaid.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\battery-almost-empty.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\battery-almost-full.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\battery-empty.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\battery-full.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\battery.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bended-arrow-down.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bended-arrow-left.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bended-arrow-right.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bended-arrow-up.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\big-brush.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\blackberry.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\blocks-images.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\blu-ray.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bluetooth-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bluetooth.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\book-large.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\book.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\books.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\box-incoming.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\box-outgoing.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\bulls-eye.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\calculator.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\camera-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\camera.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\car.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cash-register.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cassette.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cat.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chair.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart-5.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart-6.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart-7.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart-8.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chart.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chemical.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\chrome.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\clipboard.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\clock.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cloud-download.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cloud-upload.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cloud.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cog-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cog-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cog-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cog.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\companies.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\computer_imac.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\coverflow.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\create-write.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cup.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\cut-scissors.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\day-calendar.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\delicious.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\digg-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\digg.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\download-to-computer.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\download.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\dress.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\dribbble-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\dribbble.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\dropbox.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\drupal.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\dvd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\electricity-input.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\electricity-plug.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\excel-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\excel-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\exit.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\exposé.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\expression-engine.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\eyedropper.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\facebook-like.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\facebook.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\fax.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\female-contour.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\female-symbol.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\file-cabinet.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\film-camera.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\film-strip-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\film-strip.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\finish-flag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\firefox.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\flag-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\flag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\folder.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\footprints.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\fountain-pen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\frames.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\globe-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\globe.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\go-back-from-full-screen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\go-back-from-screen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\go-full-screen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\google-buzz.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\google-maps.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\graph.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\hd-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\hd-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\hd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\headphones.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\help.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\home-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\home.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ice-cream-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ice-cream.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ichat.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\image%281%29.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\image-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\image.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\images-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\inbox.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\info-about.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ipad.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\iphone-3g.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\iphone-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ipod-classic.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ipod-nano.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\joomla.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\key-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\key.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\lady%27s-purse.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\lamp.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\laptop.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\lastfm-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\lemonade-stand.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\light-bulb.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\link-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\link.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\linux.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\list-w_-image.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\list-w_-images.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\list.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\loading-bar.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\locked-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\locked.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\macos.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\magic-mouse.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\magnifying-glass.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\mail.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\male-contour.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\male-symbol.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\map.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\marker.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\medical-case.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\megaphone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\microphone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\mighty-mouse.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\mobile-phone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\mobypicture.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\money-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\money.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\monitor.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\month-calendar.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\mouse-wires.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\myspace-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\note-book.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\pacman-ghost.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\pacman.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\paint-brush.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\pants.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\paperclip.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\paypal-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\paypal-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\paypal.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\pdf-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\pdf-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\pencil.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\phone-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\phone-hook.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\phone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\piggy-bank.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\plane-suitcase.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\plixi.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\post-card.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\power.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\powerpoint-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\powerpoint-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\presentation.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\preview.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\price-tag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\price-tags.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\printer.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\radio.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\record.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\recycle-symbol.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\refresh-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\refresh-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\refresh-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\refresh.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\repeat.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\robot.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\rss.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ruler-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\ruler.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\running-man.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\safari.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\scan-label-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sd-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sd-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\settings-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\settings.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shopping-bag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shopping-basket-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shopping-basket.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shopping-cart-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shopping-cart-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shopping-cart-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shopping-cart.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\shuffle.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sign-post.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\skype.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sleeveless-shirt.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\small-brush.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\socks.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sound.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\speech-bubble-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\speech-bubble.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\speech-bubbles-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\speech-bubbles.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sport-shirt.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\stop-watch.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\strategy-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\strategy.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\stubleupon.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\suitcase.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\sweater.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\t-shirt.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\table.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\tag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\tags-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\television.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\timer.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\trashcan-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\trashcan.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\travel-suitcase.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\tree.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\trolly.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\truck.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\tumbler.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\twitter-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\twitter.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\umbrella.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\under-construction.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\unlocked.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\upload.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\user-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\user-comment.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\user.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\users-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\users.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\v-card-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\v-card.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\vault.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\vimeo-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\vimeo.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\walking-man.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\wifi-signal-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\wifi-signal.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\windows.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\winner-podium.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\word-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\word-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\wordpress-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\wordpress-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\wordpress.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\youtube-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\youtube.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\zip-file.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\dark\zip-files.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\abacus.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\acces-denied-sign.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\address-book.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\admin-user-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\admin-user.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\airplane.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\alarm-bell-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\alarm-bell.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\alarm-clock.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\alert-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\alert.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\android.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\apartment-building.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\archive.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\balloons.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bandaid.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\battery-almost-empty.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\battery-almost-full.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\battery-empty.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\battery-full.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\battery.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bended-arrow-down.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bended-arrow-left.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bended-arrow-right.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bended-arrow-up.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\big-brush.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\blackberry.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\blocks-images.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\blu-ray.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bluetooth-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bluetooth.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\book-large.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\book.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\books.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\box-incoming.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\box-outgoing.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\bulls-eye.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\calculator.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\camera-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\camera.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\car.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cash-register.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cassette.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cat.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chair.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart-5.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart-6.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart-7.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart-8.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chart.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chemical.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\chrome.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\clipboard.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\clock.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cloud-download.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cloud-upload.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cloud.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cog-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cog-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cog-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cog.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\companies.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\computer_imac.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\coverflow.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\create-write.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cup.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\cut-scissors.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\day-calendar.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\delicious.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\digg-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\digg.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\download-to-computer.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\download.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\dress.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\dribbble-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\dribbble.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\dropbox.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\drupal.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\dvd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\electricity-input.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\electricity-plug.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\excel-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\excel-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\exit.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\exposé.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\expression-engine.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\eyedropper.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\facebook-like.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\facebook.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\fax.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\female-contour.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\female-symbol.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\file-cabinet.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\film-camera.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\film-strip-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\film-strip.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\finish-flag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\firefox.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\flag-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\flag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\folder.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\footprints.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\fountain-pen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\frames.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\globe-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\globe.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\go-back-from-full-screen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\go-back-from-screen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\go-full-screen.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\google-buzz.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\google-maps.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\graph.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\hd-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\hd-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\hd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\headphones.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\help.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\home-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\home.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ice-cream-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ice-cream.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ichat.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\image%281%29.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\image-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\image.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\images-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\inbox.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\info-about.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ipad.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\iphone-3g.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\iphone-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ipod-classic.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ipod-nano.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\joomla.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\key-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\key.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\lady%27s-purse.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\lamp.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\laptop.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\lastfm-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\lemonade-stand.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\light-bulb.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\link-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\link.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\linux.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\list-w_-image.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\list-w_-images.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\list.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\loading-bar.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\locked-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\locked.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\macos.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\magic-mouse.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\magnifying-glass.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\mail.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\male-contour.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\male-symbol.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\map.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\marker.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\medical-case.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\megaphone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\microphone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\mighty-mouse.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\mobile-phone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\mobypicture.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\money-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\money.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\monitor.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\month-calendar.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\mouse-wires.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\myspace-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\note-book.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\pacman-ghost.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\pacman.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\paint-brush.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\pants.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\paperclip.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\paypal-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\paypal-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\paypal.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\pdf-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\pdf-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\pencil.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\phone-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\phone-hook.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\phone.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\piggy-bank.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\plane-suitcase.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\plixi.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\post-card.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\power.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\powerpoint-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\powerpoint-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\presentation.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\preview.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\price-tag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\price-tags.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\printer.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\radio.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\record.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\recycle-symbol.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\refresh-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\refresh-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\refresh-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\refresh.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\repeat.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\robot.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\rss.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ruler-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\ruler.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\running-man.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\safari.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\scan-label-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sd-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sd-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sd.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\settings-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\settings.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shopping-bag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shopping-basket-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shopping-basket.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shopping-cart-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shopping-cart-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shopping-cart-4.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shopping-cart.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\shuffle.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sign-post.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\skype.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sleeveless-shirt.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\small-brush.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\socks.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sound.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\speech-bubble-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\speech-bubble.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\speech-bubbles-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\speech-bubbles.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sport-shirt.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\stop-watch.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\strategy-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\strategy.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\stubleupon.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\suitcase.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\sweater.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\t-shirt.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\table.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\tag.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\tags-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\television.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\timer.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\trashcan-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\trashcan.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\travel-suitcase.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\tree.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\trolly.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\truck.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\tumbler.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\twitter-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\twitter.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\umbrella.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\under-construction.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\unlocked.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\upload.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\user-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\user-comment.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\user.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\users-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\users.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\v-card-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\v-card.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\vault.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\vimeo-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\vimeo.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\walking-man.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\wifi-signal-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\wifi-signal.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\windows.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\winner-podium.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\word-document.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\word-documents.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\wordpress-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\wordpress-3.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\wordpress.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\youtube-2.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\youtube.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\zip-file.png" />
+    <Content Include="assets\images\icons\iconsweets\is2\white\zip-files.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\address-book-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\arrow-down-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\arrow-left-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\arrow-right-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\arrow-up-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\bar-graph-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\book-bookmark-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\bookmark-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\calendar-today-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\check-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\clipboard-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\clock-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\cross-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\crosshair-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\cut-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\eject-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\excel-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\facebook-f-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\favorite-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\film-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\flatscreen-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\folder-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\heart-favorite-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\home-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\lock-locked-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\looking-glass-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\message-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\minus-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\multiple-users-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\music-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\new-message-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\next-track-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\off-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\pdf-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\pencil-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\play-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\plus-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\polaroids-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\powerpoint-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\presentation-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\previous-track-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\save-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\settings-smal.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\single-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\single-excel-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\single-pdf-small-copy.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\single-powerpoint-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\single-user-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\single-word-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\single-zip-file-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\speech-bubbles-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\stop-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\tag-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\twitter-t-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\unfavorite-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\unlock-unlocked-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\v-card-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\word-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\dark\zip-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\address-book-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\arrow-down-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\arrow-left-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\arrow-right-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\arrow-up-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\bar-graph-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\book-bookmark-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\bookmark-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\calendar-today-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\check-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\clipboard-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\clock-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\cross-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\crosshair-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\cut-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\eject-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\excel-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\facebook-f-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\favorite-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\film-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\flatscreen-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\folder-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\heart-favorite-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\home-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\lock-locked-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\looking-glass-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\message-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\minus-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\multiple-users-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\music-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\new-message-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\next-track-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\off-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\pdf-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\pencil-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\play-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\plus-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\polaroids-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\powerpoint-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\presentation-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\previous-track-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\save-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\settings-smal.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\single-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\single-excel-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\single-pdf-small-copy.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\single-powerpoint-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\single-user-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\single-word-document-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\single-zip-file-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\speech-bubbles-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\stop-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\tag-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\twitter-t-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\unfavorite-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\unlock-unlocked-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\v-card-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\word-documents-small.png" />
+    <Content Include="assets\images\icons\iconsweets\is\white\zip-document-small.png" />
+    <Content Include="assets\images\icons\led\sprite.png" />
+    <Content Include="assets\images\icons\led\src\1license.txt" />
+    <Content Include="assets\images\icons\led\src\accept.png" />
+    <Content Include="assets\images\icons\led\src\add.png" />
+    <Content Include="assets\images\icons\led\src\alarm.png" />
+    <Content Include="assets\images\icons\led\src\anchor.png" />
+    <Content Include="assets\images\icons\led\src\application.png" />
+    <Content Include="assets\images\icons\led\src\application2.png" />
+    <Content Include="assets\images\icons\led\src\application_add.png" />
+    <Content Include="assets\images\icons\led\src\application_cascade.png" />
+    <Content Include="assets\images\icons\led\src\application_delete.png" />
+    <Content Include="assets\images\icons\led\src\application_double.png" />
+    <Content Include="assets\images\icons\led\src\application_edit.png" />
+    <Content Include="assets\images\icons\led\src\application_error.png" />
+    <Content Include="assets\images\icons\led\src\application_form.png" />
+    <Content Include="assets\images\icons\led\src\application_get.png" />
+    <Content Include="assets\images\icons\led\src\application_go.png" />
+    <Content Include="assets\images\icons\led\src\application_home.png" />
+    <Content Include="assets\images\icons\led\src\application_key.png" />
+    <Content Include="assets\images\icons\led\src\application_lightning.png" />
+    <Content Include="assets\images\icons\led\src\application_link.png" />
+    <Content Include="assets\images\icons\led\src\application_osx.png" />
+    <Content Include="assets\images\icons\led\src\application_osx_terminal.png" />
+    <Content Include="assets\images\icons\led\src\application_put.png" />
+    <Content Include="assets\images\icons\led\src\application_side_boxes.png" />
+    <Content Include="assets\images\icons\led\src\application_side_contract.png" />
+    <Content Include="assets\images\icons\led\src\application_side_expand.png" />
+    <Content Include="assets\images\icons\led\src\application_side_list.png" />
+    <Content Include="assets\images\icons\led\src\application_side_tree.png" />
+    <Content Include="assets\images\icons\led\src\application_split.png" />
+    <Content Include="assets\images\icons\led\src\application_tile_horizontal.png" />
+    <Content Include="assets\images\icons\led\src\application_tile_vertical.png" />
+    <Content Include="assets\images\icons\led\src\application_view_columns.png" />
+    <Content Include="assets\images\icons\led\src\application_view_detail.png" />
+    <Content Include="assets\images\icons\led\src\application_view_gallery.png" />
+    <Content Include="assets\images\icons\led\src\application_view_icons.png" />
+    <Content Include="assets\images\icons\led\src\application_view_list.png" />
+    <Content Include="assets\images\icons\led\src\application_view_tile.png" />
+    <Content Include="assets\images\icons\led\src\application_view_xp.png" />
+    <Content Include="assets\images\icons\led\src\application_view_xp_terminal.png" />
+    <Content Include="assets\images\icons\led\src\arrow_branch.png" />
+    <Content Include="assets\images\icons\led\src\arrow_divide.png" />
+    <Content Include="assets\images\icons\led\src\arrow_in.png" />
+    <Content Include="assets\images\icons\led\src\arrow_inout.png" />
+    <Content Include="assets\images\icons\led\src\arrow_join.png" />
+    <Content Include="assets\images\icons\led\src\arrow_left.png" />
+    <Content Include="assets\images\icons\led\src\arrow_merge.png" />
+    <Content Include="assets\images\icons\led\src\arrow_out.png" />
+    <Content Include="assets\images\icons\led\src\arrow_redo.png" />
+    <Content Include="assets\images\icons\led\src\arrow_refresh.png" />
+    <Content Include="assets\images\icons\led\src\arrow_right.png" />
+    <Content Include="assets\images\icons\led\src\arrow_undo.png" />
+    <Content Include="assets\images\icons\led\src\asterisk_orange.png" />
+    <Content Include="assets\images\icons\led\src\attach.png" />
+    <Content Include="assets\images\icons\led\src\attach_2.png" />
+    <Content Include="assets\images\icons\led\src\award_star_gold.png" />
+    <Content Include="assets\images\icons\led\src\bandaid.png" />
+    <Content Include="assets\images\icons\led\src\basket.png" />
+    <Content Include="assets\images\icons\led\src\bell.png" />
+    <Content Include="assets\images\icons\led\src\bin_closed.png" />
+    <Content Include="assets\images\icons\led\src\blog.png" />
+    <Content Include="assets\images\icons\led\src\blueprint.png" />
+    <Content Include="assets\images\icons\led\src\blueprint_horizontal.png" />
+    <Content Include="assets\images\icons\led\src\bluetooth.png" />
+    <Content Include="assets\images\icons\led\src\bomb.png" />
+    <Content Include="assets\images\icons\led\src\book.png" />
+    <Content Include="assets\images\icons\led\src\bookmark.png" />
+    <Content Include="assets\images\icons\led\src\bookmark_book.png" />
+    <Content Include="assets\images\icons\led\src\bookmark_book_open.png" />
+    <Content Include="assets\images\icons\led\src\bookmark_document.png" />
+    <Content Include="assets\images\icons\led\src\bookmark_folder.png" />
+    <Content Include="assets\images\icons\led\src\books.png" />
+    <Content Include="assets\images\icons\led\src\book_addresses.png" />
+    <Content Include="assets\images\icons\led\src\book_next.png" />
+    <Content Include="assets\images\icons\led\src\book_open.png" />
+    <Content Include="assets\images\icons\led\src\book_previous.png" />
+    <Content Include="assets\images\icons\led\src\box.png" />
+    <Content Include="assets\images\icons\led\src\brick.png" />
+    <Content Include="assets\images\icons\led\src\bricks.png" />
+    <Content Include="assets\images\icons\led\src\briefcase.png" />
+    <Content Include="assets\images\icons\led\src\bug.png" />
+    <Content Include="assets\images\icons\led\src\buildings.png" />
+    <Content Include="assets\images\icons\led\src\bullet_add_1.png" />
+    <Content Include="assets\images\icons\led\src\bullet_add_2.png" />
+    <Content Include="assets\images\icons\led\src\bullet_key.png" />
+    <Content Include="assets\images\icons\led\src\cake.png" />
+    <Content Include="assets\images\icons\led\src\calculator.png" />
+    <Content Include="assets\images\icons\led\src\calendar_1.png" />
+    <Content Include="assets\images\icons\led\src\calendar_2.png" />
+    <Content Include="assets\images\icons\led\src\camera.png" />
+    <Content Include="assets\images\icons\led\src\cancel.png" />
+    <Content Include="assets\images\icons\led\src\car.png" />
+    <Content Include="assets\images\icons\led\src\cart.png" />
+    <Content Include="assets\images\icons\led\src\cd.png" />
+    <Content Include="assets\images\icons\led\src\chart_bar.png" />
+    <Content Include="assets\images\icons\led\src\chart_curve.png" />
+    <Content Include="assets\images\icons\led\src\chart_line.png" />
+    <Content Include="assets\images\icons\led\src\chart_organisation.png" />
+    <Content Include="assets\images\icons\led\src\chart_pie.png" />
+    <Content Include="assets\images\icons\led\src\clipboard_paste_image.png" />
+    <Content Include="assets\images\icons\led\src\clipboard_sign.png" />
+    <Content Include="assets\images\icons\led\src\clipboard_text.png" />
+    <Content Include="assets\images\icons\led\src\clock.png" />
+    <Content Include="assets\images\icons\led\src\cog.png" />
+    <Content Include="assets\images\icons\led\src\coins.png" />
+    <Content Include="assets\images\icons\led\src\color_swatch_1.png" />
+    <Content Include="assets\images\icons\led\src\color_swatch_2.png" />
+    <Content Include="assets\images\icons\led\src\comment.png" />
+    <Content Include="assets\images\icons\led\src\compass.png" />
+    <Content Include="assets\images\icons\led\src\compress.png" />
+    <Content Include="assets\images\icons\led\src\computer.png" />
+    <Content Include="assets\images\icons\led\src\connect.png" />
+    <Content Include="assets\images\icons\led\src\contrast.png" />
+    <Content Include="assets\images\icons\led\src\control_eject.png" />
+    <Content Include="assets\images\icons\led\src\control_end.png" />
+    <Content Include="assets\images\icons\led\src\control_equalizer.png" />
+    <Content Include="assets\images\icons\led\src\control_fastforward.png" />
+    <Content Include="assets\images\icons\led\src\control_pause.png" />
+    <Content Include="assets\images\icons\led\src\control_play.png" />
+    <Content Include="assets\images\icons\led\src\control_repeat.png" />
+    <Content Include="assets\images\icons\led\src\control_rewind.png" />
+    <Content Include="assets\images\icons\led\src\control_start.png" />
+    <Content Include="assets\images\icons\led\src\control_stop.png" />
+    <Content Include="assets\images\icons\led\src\control_wheel.png" />
+    <Content Include="assets\images\icons\led\src\counter.png" />
+    <Content Include="assets\images\icons\led\src\counter_count.png" />
+    <Content Include="assets\images\icons\led\src\counter_count_up.png" />
+    <Content Include="assets\images\icons\led\src\counter_reset.png" />
+    <Content Include="assets\images\icons\led\src\counter_stop.png" />
+    <Content Include="assets\images\icons\led\src\cross.png" />
+    <Content Include="assets\images\icons\led\src\cross_octagon.png" />
+    <Content Include="assets\images\icons\led\src\cross_octagon_fram.png" />
+    <Content Include="assets\images\icons\led\src\cross_shield.png" />
+    <Content Include="assets\images\icons\led\src\cross_shield_2.png" />
+    <Content Include="assets\images\icons\led\src\crown.png" />
+    <Content Include="assets\images\icons\led\src\crown_bronze.png" />
+    <Content Include="assets\images\icons\led\src\crown_silver.png" />
+    <Content Include="assets\images\icons\led\src\css.png" />
+    <Content Include="assets\images\icons\led\src\cursor.png" />
+    <Content Include="assets\images\icons\led\src\cut.png" />
+    <Content Include="assets\images\icons\led\src\dashboard.png" />
+    <Content Include="assets\images\icons\led\src\data.png" />
+    <Content Include="assets\images\icons\led\src\database.png" />
+    <Content Include="assets\images\icons\led\src\databases.png" />
+    <Content Include="assets\images\icons\led\src\delete.png" />
+    <Content Include="assets\images\icons\led\src\delivery.png" />
+    <Content Include="assets\images\icons\led\src\desktop.png" />
+    <Content Include="assets\images\icons\led\src\desktop_empty.png" />
+    <Content Include="assets\images\icons\led\src\direction.png" />
+    <Content Include="assets\images\icons\led\src\disconnect.png" />
+    <Content Include="assets\images\icons\led\src\disk.png" />
+    <Content Include="assets\images\icons\led\src\doc_access.png" />
+    <Content Include="assets\images\icons\led\src\doc_break.png" />
+    <Content Include="assets\images\icons\led\src\doc_convert.png" />
+    <Content Include="assets\images\icons\led\src\doc_excel_csv.png" />
+    <Content Include="assets\images\icons\led\src\doc_excel_table.png" />
+    <Content Include="assets\images\icons\led\src\doc_film.png" />
+    <Content Include="assets\images\icons\led\src\doc_illustrator.png" />
+    <Content Include="assets\images\icons\led\src\doc_music.png" />
+    <Content Include="assets\images\icons\led\src\doc_music_playlist.png" />
+    <Content Include="assets\images\icons\led\src\doc_offlice.png" />
+    <Content Include="assets\images\icons\led\src\doc_page.png" />
+    <Content Include="assets\images\icons\led\src\doc_page_previous.png" />
+    <Content Include="assets\images\icons\led\src\doc_pdf.png" />
+    <Content Include="assets\images\icons\led\src\doc_photoshop.png" />
+    <Content Include="assets\images\icons\led\src\doc_resize.png" />
+    <Content Include="assets\images\icons\led\src\doc_resize_actual.png" />
+    <Content Include="assets\images\icons\led\src\doc_shred.png" />
+    <Content Include="assets\images\icons\led\src\doc_stand.png" />
+    <Content Include="assets\images\icons\led\src\doc_table.png" />
+    <Content Include="assets\images\icons\led\src\doc_tag.png" />
+    <Content Include="assets\images\icons\led\src\doc_text_image.png" />
+    <Content Include="assets\images\icons\led\src\door.png" />
+    <Content Include="assets\images\icons\led\src\door_in.png" />
+    <Content Include="assets\images\icons\led\src\drawer.png" />
+    <Content Include="assets\images\icons\led\src\drink.png" />
+    <Content Include="assets\images\icons\led\src\drink_empty.png" />
+    <Content Include="assets\images\icons\led\src\drive.png" />
+    <Content Include="assets\images\icons\led\src\drive_burn.png" />
+    <Content Include="assets\images\icons\led\src\drive_cd.png" />
+    <Content Include="assets\images\icons\led\src\drive_cd_empty.png" />
+    <Content Include="assets\images\icons\led\src\drive_delete.png" />
+    <Content Include="assets\images\icons\led\src\drive_disk.png" />
+    <Content Include="assets\images\icons\led\src\drive_error.png" />
+    <Content Include="assets\images\icons\led\src\drive_go.png" />
+    <Content Include="assets\images\icons\led\src\drive_link.png" />
+    <Content Include="assets\images\icons\led\src\drive_network.png" />
+    <Content Include="assets\images\icons\led\src\drive_rename.png" />
+    <Content Include="assets\images\icons\led\src\dvd.png" />
+    <Content Include="assets\images\icons\led\src\email.png" />
+    <Content Include="assets\images\icons\led\src\email_open.png" />
+    <Content Include="assets\images\icons\led\src\email_open_image.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_evilgrin.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_grin.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_happy.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_smile.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_surprised.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_tongue.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_unhappy.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_waii.png" />
+    <Content Include="assets\images\icons\led\src\emoticon_wink.png" />
+    <Content Include="assets\images\icons\led\src\envelope.png" />
+    <Content Include="assets\images\icons\led\src\envelope_2.png" />
+    <Content Include="assets\images\icons\led\src\error.png" />
+    <Content Include="assets\images\icons\led\src\exclamation.png" />
+    <Content Include="assets\images\icons\led\src\exclamation_octagon_fram.png" />
+    <Content Include="assets\images\icons\led\src\eye.png" />
+    <Content Include="assets\images\icons\led\src\feed.png" />
+    <Content Include="assets\images\icons\led\src\feed_ballon.png" />
+    <Content Include="assets\images\icons\led\src\feed_document.png" />
+    <Content Include="assets\images\icons\led\src\female.png" />
+    <Content Include="assets\images\icons\led\src\film.png" />
+    <Content Include="assets\images\icons\led\src\films.png" />
+    <Content Include="assets\images\icons\led\src\find.png" />
+    <Content Include="assets\images\icons\led\src\flag_blue.png" />
+    <Content Include="assets\images\icons\led\src\folder.png" />
+    <Content Include="assets\images\icons\led\src\font.png" />
+    <Content Include="assets\images\icons\led\src\funnel.png" />
+    <Content Include="assets\images\icons\led\src\grid.png" />
+    <Content Include="assets\images\icons\led\src\grid_dot.png" />
+    <Content Include="assets\images\icons\led\src\group.png" />
+    <Content Include="assets\images\icons\led\src\hammer.png" />
+    <Content Include="assets\images\icons\led\src\hammer_screwdriver.png" />
+    <Content Include="assets\images\icons\led\src\hand.png" />
+    <Content Include="assets\images\icons\led\src\hand_point.png" />
+    <Content Include="assets\images\icons\led\src\heart.png" />
+    <Content Include="assets\images\icons\led\src\heart_break.png" />
+    <Content Include="assets\images\icons\led\src\heart_empty.png" />
+    <Content Include="assets\images\icons\led\src\heart_half.png" />
+    <Content Include="assets\images\icons\led\src\heart_small.png" />
+    <Content Include="assets\images\icons\led\src\help.png" />
+    <Content Include="assets\images\icons\led\src\highlighter.png" />
+    <Content Include="assets\images\icons\led\src\house.png" />
+    <Content Include="assets\images\icons\led\src\html.png" />
+    <Content Include="assets\images\icons\led\src\images.png" />
+    <Content Include="assets\images\icons\led\src\image_1.png" />
+    <Content Include="assets\images\icons\led\src\image_2.png" />
+    <Content Include="assets\images\icons\led\src\inbox.png" />
+    <Content Include="assets\images\icons\led\src\ipod.png" />
+    <Content Include="assets\images\icons\led\src\ipod_cast.png" />
+    <Content Include="assets\images\icons\led\src\joystick.png" />
+    <Content Include="assets\images\icons\led\src\key.png" />
+    <Content Include="assets\images\icons\led\src\keyboard.png" />
+    <Content Include="assets\images\icons\led\src\layers.png" />
+    <Content Include="assets\images\icons\led\src\layer_treansparent.png" />
+    <Content Include="assets\images\icons\led\src\layout.png" />
+    <Content Include="assets\images\icons\led\src\layout_header_footer_3.png" />
+    <Content Include="assets\images\icons\led\src\layout_header_footer_3_mix.png" />
+    <Content Include="assets\images\icons\led\src\layout_join.png" />
+    <Content Include="assets\images\icons\led\src\layout_join_vertical.png" />
+    <Content Include="assets\images\icons\led\src\layout_select.png" />
+    <Content Include="assets\images\icons\led\src\layout_select_content.png" />
+    <Content Include="assets\images\icons\led\src\layout_select_footer.png" />
+    <Content Include="assets\images\icons\led\src\layout_select_sidebar.png" />
+    <Content Include="assets\images\icons\led\src\layout_split.png" />
+    <Content Include="assets\images\icons\led\src\layout_split_vertical.png" />
+    <Content Include="assets\images\icons\led\src\lifebuoy.png" />
+    <Content Include="assets\images\icons\led\src\lightbulb.png" />
+    <Content Include="assets\images\icons\led\src\lightbulb_off.png" />
+    <Content Include="assets\images\icons\led\src\lightning.png" />
+    <Content Include="assets\images\icons\led\src\link.png" />
+    <Content Include="assets\images\icons\led\src\link_break.png" />
+    <Content Include="assets\images\icons\led\src\lock.png" />
+    <Content Include="assets\images\icons\led\src\lock_unlock.png" />
+    <Content Include="assets\images\icons\led\src\magnet.png" />
+    <Content Include="assets\images\icons\led\src\magnifier.png" />
+    <Content Include="assets\images\icons\led\src\magnifier_zoom_in.png" />
+    <Content Include="assets\images\icons\led\src\male.png" />
+    <Content Include="assets\images\icons\led\src\map.png" />
+    <Content Include="assets\images\icons\led\src\marker.png" />
+    <Content Include="assets\images\icons\led\src\medal_bronze_1.png" />
+    <Content Include="assets\images\icons\led\src\medal_gold_1.png" />
+    <Content Include="assets\images\icons\led\src\media_player_small_blue.png" />
+    <Content Include="assets\images\icons\led\src\microphone.png" />
+    <Content Include="assets\images\icons\led\src\mobile_phone.png" />
+    <Content Include="assets\images\icons\led\src\money.png" />
+    <Content Include="assets\images\icons\led\src\money_dollar.png" />
+    <Content Include="assets\images\icons\led\src\money_euro.png" />
+    <Content Include="assets\images\icons\led\src\money_pound.png" />
+    <Content Include="assets\images\icons\led\src\money_yen.png" />
+    <Content Include="assets\images\icons\led\src\monitor.png" />
+    <Content Include="assets\images\icons\led\src\mouse.png" />
+    <Content Include="assets\images\icons\led\src\music.png" />
+    <Content Include="assets\images\icons\led\src\music_beam.png" />
+    <Content Include="assets\images\icons\led\src\neutral.png" />
+    <Content Include="assets\images\icons\led\src\new.png" />
+    <Content Include="assets\images\icons\led\src\newspaper.png" />
+    <Content Include="assets\images\icons\led\src\note.png" />
+    <Content Include="assets\images\icons\led\src\nuclear.png" />
+    <Content Include="assets\images\icons\led\src\package.png" />
+    <Content Include="assets\images\icons\led\src\page.png" />
+    <Content Include="assets\images\icons\led\src\page_2.png" />
+    <Content Include="assets\images\icons\led\src\page_2_copy.png" />
+    <Content Include="assets\images\icons\led\src\page_code.png" />
+    <Content Include="assets\images\icons\led\src\page_copy.png" />
+    <Content Include="assets\images\icons\led\src\page_excel.png" />
+    <Content Include="assets\images\icons\led\src\page_lightning.png" />
+    <Content Include="assets\images\icons\led\src\page_paste.png" />
+    <Content Include="assets\images\icons\led\src\page_red.png" />
+    <Content Include="assets\images\icons\led\src\page_refresh.png" />
+    <Content Include="assets\images\icons\led\src\page_save.png" />
+    <Content Include="assets\images\icons\led\src\page_white_cplusplus.png" />
+    <Content Include="assets\images\icons\led\src\page_white_csharp.png" />
+    <Content Include="assets\images\icons\led\src\page_white_cup.png" />
+    <Content Include="assets\images\icons\led\src\page_white_database.png" />
+    <Content Include="assets\images\icons\led\src\page_white_delete.png" />
+    <Content Include="assets\images\icons\led\src\page_white_dvd.png" />
+    <Content Include="assets\images\icons\led\src\page_white_edit.png" />
+    <Content Include="assets\images\icons\led\src\page_white_error.png" />
+    <Content Include="assets\images\icons\led\src\page_white_excel.png" />
+    <Content Include="assets\images\icons\led\src\page_white_find.png" />
+    <Content Include="assets\images\icons\led\src\page_white_flash.png" />
+    <Content Include="assets\images\icons\led\src\page_white_freehand.png" />
+    <Content Include="assets\images\icons\led\src\page_white_gear.png" />
+    <Content Include="assets\images\icons\led\src\page_white_get.png" />
+    <Content Include="assets\images\icons\led\src\page_white_paintbrush.png" />
+    <Content Include="assets\images\icons\led\src\page_white_paste.png" />
+    <Content Include="assets\images\icons\led\src\page_white_php.png" />
+    <Content Include="assets\images\icons\led\src\page_white_picture.png" />
+    <Content Include="assets\images\icons\led\src\page_white_powerpoint.png" />
+    <Content Include="assets\images\icons\led\src\page_white_put.png" />
+    <Content Include="assets\images\icons\led\src\page_white_ruby.png" />
+    <Content Include="assets\images\icons\led\src\page_white_stack.png" />
+    <Content Include="assets\images\icons\led\src\page_white_star.png" />
+    <Content Include="assets\images\icons\led\src\page_white_swoosh.png" />
+    <Content Include="assets\images\icons\led\src\page_white_text.png" />
+    <Content Include="assets\images\icons\led\src\page_white_text_width.png" />
+    <Content Include="assets\images\icons\led\src\page_white_tux.png" />
+    <Content Include="assets\images\icons\led\src\page_white_vector.png" />
+    <Content Include="assets\images\icons\led\src\page_white_visualstudio.png" />
+    <Content Include="assets\images\icons\led\src\page_white_width.png" />
+    <Content Include="assets\images\icons\led\src\page_white_word.png" />
+    <Content Include="assets\images\icons\led\src\page_white_world.png" />
+    <Content Include="assets\images\icons\led\src\page_white_wrench.png" />
+    <Content Include="assets\images\icons\led\src\page_white_zip.png" />
+    <Content Include="assets\images\icons\led\src\paintbrush.png" />
+    <Content Include="assets\images\icons\led\src\paintcan.png" />
+    <Content Include="assets\images\icons\led\src\palette.png" />
+    <Content Include="assets\images\icons\led\src\paper_bag.png" />
+    <Content Include="assets\images\icons\led\src\paste_plain.png" />
+    <Content Include="assets\images\icons\led\src\paste_word.png" />
+    <Content Include="assets\images\icons\led\src\pencil.png" />
+    <Content Include="assets\images\icons\led\src\photo.png" />
+    <Content Include="assets\images\icons\led\src\photos.png" />
+    <Content Include="assets\images\icons\led\src\photo_album.png" />
+    <Content Include="assets\images\icons\led\src\piano.png" />
+    <Content Include="assets\images\icons\led\src\picture.png" />
+    <Content Include="assets\images\icons\led\src\pilcrow.png" />
+    <Content Include="assets\images\icons\led\src\pill.png" />
+    <Content Include="assets\images\icons\led\src\pin.png" />
+    <Content Include="assets\images\icons\led\src\pipette.png" />
+    <Content Include="assets\images\icons\led\src\plaing_card.png" />
+    <Content Include="assets\images\icons\led\src\plug.png" />
+    <Content Include="assets\images\icons\led\src\plugin.png" />
+    <Content Include="assets\images\icons\led\src\printer.png" />
+    <Content Include="assets\images\icons\led\src\projection_screen.png" />
+    <Content Include="assets\images\icons\led\src\projection_screen_present.png" />
+    <Content Include="assets\images\icons\led\src\rainbow.png" />
+    <Content Include="assets\images\icons\led\src\readme.txt" />
+    <Content Include="assets\images\icons\led\src\report.png" />
+    <Content Include="assets\images\icons\led\src\rocket.png" />
+    <Content Include="assets\images\icons\led\src\rosette.png" />
+    <Content Include="assets\images\icons\led\src\rss.png" />
+    <Content Include="assets\images\icons\led\src\ruby.png" />
+    <Content Include="assets\images\icons\led\src\ruler_1.png" />
+    <Content Include="assets\images\icons\led\src\ruler_2.png" />
+    <Content Include="assets\images\icons\led\src\ruler_crop.png" />
+    <Content Include="assets\images\icons\led\src\ruler_triangle.png" />
+    <Content Include="assets\images\icons\led\src\safe.png" />
+    <Content Include="assets\images\icons\led\src\script.png" />
+    <Content Include="assets\images\icons\led\src\selection.png" />
+    <Content Include="assets\images\icons\led\src\selection_select.png" />
+    <Content Include="assets\images\icons\led\src\server.png" />
+    <Content Include="assets\images\icons\led\src\shading.png" />
+    <Content Include="assets\images\icons\led\src\shape_aling_bottom.png" />
+    <Content Include="assets\images\icons\led\src\shape_aling_center.png" />
+    <Content Include="assets\images\icons\led\src\shape_aling_left.png" />
+    <Content Include="assets\images\icons\led\src\shape_aling_middle.png" />
+    <Content Include="assets\images\icons\led\src\shape_aling_right.png" />
+    <Content Include="assets\images\icons\led\src\shape_aling_top.png" />
+    <Content Include="assets\images\icons\led\src\shape_flip_horizontal.png" />
+    <Content Include="assets\images\icons\led\src\shape_flip_vertical.png" />
+    <Content Include="assets\images\icons\led\src\shape_group.png" />
+    <Content Include="assets\images\icons\led\src\shape_handles.png" />
+    <Content Include="assets\images\icons\led\src\shape_move_back.png" />
+    <Content Include="assets\images\icons\led\src\shape_move_backwards.png" />
+    <Content Include="assets\images\icons\led\src\shape_move_forwards.png" />
+    <Content Include="assets\images\icons\led\src\shape_move_front.png" />
+    <Content Include="assets\images\icons\led\src\shape_square.png" />
+    <Content Include="assets\images\icons\led\src\shield.png" />
+    <Content Include="assets\images\icons\led\src\sitemap.png" />
+    <Content Include="assets\images\icons\led\src\slide.png" />
+    <Content Include="assets\images\icons\led\src\slides.png" />
+    <Content Include="assets\images\icons\led\src\slides_stack.png" />
+    <Content Include="assets\images\icons\led\src\smiley_confuse.png" />
+    <Content Include="assets\images\icons\led\src\smiley_cool.png" />
+    <Content Include="assets\images\icons\led\src\smiley_cry.png" />
+    <Content Include="assets\images\icons\led\src\smiley_fat.png" />
+    <Content Include="assets\images\icons\led\src\smiley_mad.png" />
+    <Content Include="assets\images\icons\led\src\smiley_red.png" />
+    <Content Include="assets\images\icons\led\src\smiley_roll.png" />
+    <Content Include="assets\images\icons\led\src\smiley_slim.png" />
+    <Content Include="assets\images\icons\led\src\smiley_yell.png" />
+    <Content Include="assets\images\icons\led\src\socket.png" />
+    <Content Include="assets\images\icons\led\src\sockets.png" />
+    <Content Include="assets\images\icons\led\src\sort.png" />
+    <Content Include="assets\images\icons\led\src\sort_alphabet.png" />
+    <Content Include="assets\images\icons\led\src\sort_date.png" />
+    <Content Include="assets\images\icons\led\src\sort_disable.png" />
+    <Content Include="assets\images\icons\led\src\sort_number.png" />
+    <Content Include="assets\images\icons\led\src\sort_price.png" />
+    <Content Include="assets\images\icons\led\src\sort_quantity.png" />
+    <Content Include="assets\images\icons\led\src\sort_rating.png" />
+    <Content Include="assets\images\icons\led\src\sound.png" />
+    <Content Include="assets\images\icons\led\src\sound_note.png" />
+    <Content Include="assets\images\icons\led\src\spellcheck.png" />
+    <Content Include="assets\images\icons\led\src\sport_8ball.png" />
+    <Content Include="assets\images\icons\led\src\sport_basketball.png" />
+    <Content Include="assets\images\icons\led\src\sport_football.png" />
+    <Content Include="assets\images\icons\led\src\sport_golf.png" />
+    <Content Include="assets\images\icons\led\src\sport_raquet.png" />
+    <Content Include="assets\images\icons\led\src\sport_shuttlecock.png" />
+    <Content Include="assets\images\icons\led\src\sport_soccer.png" />
+    <Content Include="assets\images\icons\led\src\sport_tennis.png" />
+    <Content Include="assets\images\icons\led\src\stamp.png" />
+    <Content Include="assets\images\icons\led\src\star_1.png" />
+    <Content Include="assets\images\icons\led\src\star_2.png" />
+    <Content Include="assets\images\icons\led\src\status_online.png" />
+    <Content Include="assets\images\icons\led\src\stop.png" />
+    <Content Include="assets\images\icons\led\src\style.png" />
+    <Content Include="assets\images\icons\led\src\sum.png" />
+    <Content Include="assets\images\icons\led\src\sum_2.png" />
+    <Content Include="assets\images\icons\led\src\switch.png" />
+    <Content Include="assets\images\icons\led\src\tab.png" />
+    <Content Include="assets\images\icons\led\src\table.png" />
+    <Content Include="assets\images\icons\led\src\tag.png" />
+    <Content Include="assets\images\icons\led\src\tag_blue.png" />
+    <Content Include="assets\images\icons\led\src\target.png" />
+    <Content Include="assets\images\icons\led\src\telephone.png" />
+    <Content Include="assets\images\icons\led\src\television.png" />
+    <Content Include="assets\images\icons\led\src\textfield.png" />
+    <Content Include="assets\images\icons\led\src\textfield_rename.png" />
+    <Content Include="assets\images\icons\led\src\text_align_center.png" />
+    <Content Include="assets\images\icons\led\src\text_align_justify.png" />
+    <Content Include="assets\images\icons\led\src\text_align_left.png" />
+    <Content Include="assets\images\icons\led\src\text_align_right.png" />
+    <Content Include="assets\images\icons\led\src\text_allcaps.png" />
+    <Content Include="assets\images\icons\led\src\text_bold.png" />
+    <Content Include="assets\images\icons\led\src\text_columns.png" />
+    <Content Include="assets\images\icons\led\src\text_dropcaps.png" />
+    <Content Include="assets\images\icons\led\src\text_heading_1.png" />
+    <Content Include="assets\images\icons\led\src\text_horizontalrule.png" />
+    <Content Include="assets\images\icons\led\src\text_indent.png" />
+    <Content Include="assets\images\icons\led\src\text_indent_remove.png" />
+    <Content Include="assets\images\icons\led\src\text_italic.png" />
+    <Content Include="assets\images\icons\led\src\text_kerning.png" />
+    <Content Include="assets\images\icons\led\src\text_letterspacing.png" />
+    <Content Include="assets\images\icons\led\src\text_letter_omega.png" />
+    <Content Include="assets\images\icons\led\src\text_linespacing.png" />
+    <Content Include="assets\images\icons\led\src\text_list_bullets.png" />
+    <Content Include="assets\images\icons\led\src\text_list_numbers.png" />
+    <Content Include="assets\images\icons\led\src\text_lowercase.png" />
+    <Content Include="assets\images\icons\led\src\text_padding_bottom.png" />
+    <Content Include="assets\images\icons\led\src\text_padding_left.png" />
+    <Content Include="assets\images\icons\led\src\text_padding_right.png" />
+    <Content Include="assets\images\icons\led\src\text_padding_top.png" />
+    <Content Include="assets\images\icons\led\src\text_signature.png" />
+    <Content Include="assets\images\icons\led\src\text_smallcaps.png" />
+    <Content Include="assets\images\icons\led\src\text_strikethrough.png" />
+    <Content Include="assets\images\icons\led\src\text_subscript.png" />
+    <Content Include="assets\images\icons\led\src\ticket.png" />
+    <Content Include="assets\images\icons\led\src\timeline_marker.png" />
+    <Content Include="assets\images\icons\led\src\traffic.png" />
+    <Content Include="assets\images\icons\led\src\transmit.png" />
+    <Content Include="assets\images\icons\led\src\trophy.png" />
+    <Content Include="assets\images\icons\led\src\trophy_bronze.png" />
+    <Content Include="assets\images\icons\led\src\trophy_silver.png" />
+    <Content Include="assets\images\icons\led\src\ui_combo_box.png" />
+    <Content Include="assets\images\icons\led\src\ui_saccordion.png" />
+    <Content Include="assets\images\icons\led\src\ui_slider_1.png" />
+    <Content Include="assets\images\icons\led\src\ui_slider_2.png" />
+    <Content Include="assets\images\icons\led\src\ui_tab_bottom.png" />
+    <Content Include="assets\images\icons\led\src\ui_tab_content.png" />
+    <Content Include="assets\images\icons\led\src\ui_tab_disable.png" />
+    <Content Include="assets\images\icons\led\src\ui_tab_side.png" />
+    <Content Include="assets\images\icons\led\src\ui_text_field_hidden.png" />
+    <Content Include="assets\images\icons\led\src\ui_text_field_password.png" />
+    <Content Include="assets\images\icons\led\src\umbrella.png" />
+    <Content Include="assets\images\icons\led\src\user.png" />
+    <Content Include="assets\images\icons\led\src\user_black_female.png" />
+    <Content Include="assets\images\icons\led\src\user_business.png" />
+    <Content Include="assets\images\icons\led\src\user_business_boss.png" />
+    <Content Include="assets\images\icons\led\src\user_female.png" />
+    <Content Include="assets\images\icons\led\src\user_silhouette.png" />
+    <Content Include="assets\images\icons\led\src\user_thief.png" />
+    <Content Include="assets\images\icons\led\src\user_thief_baldie.png" />
+    <Content Include="assets\images\icons\led\src\vcard.png" />
+    <Content Include="assets\images\icons\led\src\vector.png" />
+    <Content Include="assets\images\icons\led\src\wait.png" />
+    <Content Include="assets\images\icons\led\src\wall.png" />
+    <Content Include="assets\images\icons\led\src\wall_break.png" />
+    <Content Include="assets\images\icons\led\src\wall_brick.png" />
+    <Content Include="assets\images\icons\led\src\wall_disable.png" />
+    <Content Include="assets\images\icons\led\src\wand.png" />
+    <Content Include="assets\images\icons\led\src\weather_clouds.png" />
+    <Content Include="assets\images\icons\led\src\weather_cloudy.png" />
+    <Content Include="assets\images\icons\led\src\weather_lightning.png" />
+    <Content Include="assets\images\icons\led\src\weather_rain.png" />
+    <Content Include="assets\images\icons\led\src\weather_snow.png" />
+    <Content Include="assets\images\icons\led\src\weather_sun.png" />
+    <Content Include="assets\images\icons\led\src\webcam.png" />
+    <Content Include="assets\images\icons\led\src\world.png" />
+    <Content Include="assets\images\icons\led\src\zone.png" />
+    <Content Include="assets\images\icons\led\src\zones.png" />
+    <Content Include="assets\images\icons\led\src\zone_money.png" />
+    <Content Include="assets\images\ie.png" />
+    <Content Include="assets\images\input-left.gif" />
+    <Content Include="assets\images\input-right.gif" />
+    <Content Include="assets\images\input.gif" />
+    <Content Include="assets\images\layout\bg\arches.png" />
+    <Content Include="assets\images\layout\bg\blu_stripes.png" />
+    <Content Include="assets\images\layout\bg\bright_squares.png" />
+    <Content Include="assets\images\layout\bg\brushed_alu.png" />
+    <Content Include="assets\images\layout\bg\circles.png" />
+    <Content Include="assets\images\layout\bg\climpek.png" />
+    <Content Include="assets\images\layout\bg\connect.png" />
+    <Content Include="assets\images\layout\bg\corrugation.png" />
+    <Content Include="assets\images\layout\bg\cubes.png" />
+    <Content Include="assets\images\layout\bg\diagonal-noise.png" />
+    <Content Include="assets\images\layout\bg\diagonal_striped_brick.png" />
+    <Content Include="assets\images\layout\bg\diamonds.png" />
+    <Content Include="assets\images\layout\bg\diamond_upholstery.png" />
+    <Content Include="assets\images\layout\bg\escheresque.png" />
+    <Content Include="assets\images\layout\bg\fabric_plaid.png" />
+    <Content Include="assets\images\layout\bg\furley_bg.png" />
+    <Content Include="assets\images\layout\bg\gplaypattern.png" />
+    <Content Include="assets\images\layout\bg\gradient_squares.png" />
+    <Content Include="assets\images\layout\bg\grey.png" />
+    <Content Include="assets\images\layout\bg\grilled.png" />
+    <Content Include="assets\images\layout\bg\hexellence.png" />
+    <Content Include="assets\images\layout\bg\lghtmesh.png" />
+    <Content Include="assets\images\layout\bg\light_alu.png" />
+    <Content Include="assets\images\layout\bg\light_checkered_tiles.png" />
+    <Content Include="assets\images\layout\bg\light_honeycomb.png" />
+    <Content Include="assets\images\layout\bg\littleknobs.png" />
+    <Content Include="assets\images\layout\bg\nistri.png" />
+    <Content Include="assets\images\layout\bg\noise_lines.png" />
+    <Content Include="assets\images\layout\bg\noise_pattern_with_crosslines.png" />
+    <Content Include="assets\images\layout\bg\noisy_grid.png" />
+    <Content Include="assets\images\layout\bg\norwegian_rose.png" />
+    <Content Include="assets\images\layout\bg\pineapplecut.png" />
+    <Content Include="assets\images\layout\bg\pinstripe.png" />
+    <Content Include="assets\images\layout\bg\project_papper.png" />
+    <Content Include="assets\images\layout\bg\purty_wood.png" />
+    <Content Include="assets\images\layout\bg\ravenna.png" />
+    <Content Include="assets\images\layout\bg\reticular_tissue.png" />
+    <Content Include="assets\images\layout\bg\retina_wood.png" />
+    <Content Include="assets\images\layout\bg\rockywall.png" />
+    <Content Include="assets\images\layout\bg\roughcloth.png" />
+    <Content Include="assets\images\layout\bg\shattered.png" />
+    <Content Include="assets\images\layout\bg\silver_scales.png" />
+    <Content Include="assets\images\layout\bg\skelatal_weave.png" />
+    <Content Include="assets\images\layout\bg\small-crackle-bright.png" />
+    <Content Include="assets\images\layout\bg\small_tiles.png" />
+    <Content Include="assets\images\layout\bg\square_bg.png" />
+    <Content Include="assets\images\layout\bg\struckaxiom.png" />
+    <Content Include="assets\images\layout\bg\subtle_stripes.png" />
+    <Content Include="assets\images\layout\bg\vichy.png" />
+    <Content Include="assets\images\layout\bg\washi.png" />
+    <Content Include="assets\images\layout\bg\wavecut.png" />
+    <Content Include="assets\images\layout\bg\weave.png" />
+    <Content Include="assets\images\layout\bg\whitey.png" />
+    <Content Include="assets\images\layout\bg\white_brick_wall.png" />
+    <Content Include="assets\images\layout\bg\white_tiles.png" />
+    <Content Include="assets\images\layout\bg\wood_pattern.png" />
+    <Content Include="assets\images\layout\bg\worn_dots.png" />
+    <Content Include="assets\images\layout\caret-left.png" />
+    <Content Include="assets\images\layout\caret-right.png" />
+    <Content Include="assets\images\layout\content-bg-plain-gt1200.png" />
+    <Content Include="assets\images\layout\content-bg-plain.png" />
+    <Content Include="assets\images\layout\content-bg.png" />
+    <Content Include="assets\images\layout\dotted_border.png" />
+    <Content Include="assets\images\layout\ie-nav-hover.png" />
+    <Content Include="assets\images\layout\login-inner-bg.png" />
+    <Content Include="assets\images\layout\login-wrap-bg.png" />
+    <Content Include="assets\images\layout\mail-stripes.png" />
+    <Content Include="assets\images\layout\point-arrows.png" />
+    <Content Include="assets\images\layout\white-shadow.png" />
+    <Content Include="assets\images\login_bg.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\Maxthon.png" />
+    <Content Include="assets\images\menu_bg.jpg" />
+    <Content Include="assets\images\nophoto.gif" />
+    <Content Include="assets\images\opera.png" />
+    <Content Include="assets\images\preloaders\1.gif" />
+    <Content Include="assets\images\qq.png" />
+    <Content Include="assets\images\Safari.png" />
+    <Content Include="assets\images\sogou.png" />
+    <Content Include="assets\images\top_arrow.png" />
+    <Content Include="assets\images\unchecked.jpg" />
+    <Content Include="assets\images\world.png" />
+    <Content Include="assets\js\codemirror.js" />
+    <Content Include="assets\js\customizer.js" />
+    <Content Include="assets\js\date.js" />
+    <Content Include="assets\js\daterangepicker.min.js" />
+    <Content Include="assets\js\Dialog.js" />
+    <Content Include="assets\js\echarts-map.js" />
+    <Content Include="assets\js\EchartsJson.js" />
+    <Content Include="assets\js\esl.js" />
+    <Content Include="assets\js\html5shiv.min.js" />
+    <Content Include="assets\js\jquery-1.8.2.min.js" />
+    <Content Include="assets\js\jquery.datetimepicker.js" />
+    <Content Include="assets\js\jquery.zclip.js" />
+    <Content Include="assets\js\jquery.ztree.core-3.5.min.js" />
+    <Content Include="assets\js\jquery.ztree.excheck-3.5.min.js" />
+    <Content Include="assets\js\map.js" />
+    <Content Include="assets\js\niceforms.js" />
+    <Content Include="assets\js\pie.js" />
+    <Content Include="assets\js\respond.min.js" />
+    <Content Include="assets\js\SeachCommon.js" />
+    <Content Include="assets\js\setup.js" />
+    <Content Include="assets\js\template.js" />
+    <Content Include="assets\js\ZeroClipboard.js" />
+    <Content Include="assets\js\ZeroClipboard.swf" />
+    <Content Include="assets\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="assets\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="assets\zTreeStyle\img\diy\2.png" />
+    <Content Include="assets\zTreeStyle\img\diy\3.png" />
+    <Content Include="assets\zTreeStyle\img\diy\4.png" />
+    <Content Include="assets\zTreeStyle\img\diy\5.png" />
+    <Content Include="assets\zTreeStyle\img\diy\6.png" />
+    <Content Include="assets\zTreeStyle\img\diy\7.png" />
+    <Content Include="assets\zTreeStyle\img\diy\8.png" />
+    <Content Include="assets\zTreeStyle\img\diy\9.png" />
+    <Content Include="assets\zTreeStyle\img\line_conn.gif" />
+    <Content Include="assets\zTreeStyle\img\loading.gif" />
+    <Content Include="assets\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="assets\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="assets\zTreeStyle\zTreeStyle.css" />
+    <Content Include="bin\UserInfoServer.dll" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="CoCheckExport.aspx" />
+    <Content Include="FenXiaoExtractRport.aspx" />
+    <Content Include="FinanceMonthReport.aspx" />
+    <Content Include="GoodAreaSalesTotal.aspx" />
+    <Content Include="GoodsAdd.aspx" />
+    <Content Include="GoodSalesSearchTotal.aspx" />
+    <Content Include="GoodSalesTotal.aspx" />
+    <Content Include="GoodsDeliveryManager.aspx" />
+    <Content Include="GoodsInWareHouse.aspx" />
+    <Content Include="GoodsManager.aspx" />
+    <Content Include="GoodSortSalesTotal.aspx" />
+    <Content Include="GoodsPackageAdd.aspx" />
+    <Content Include="GoodsPackageManager.aspx" />
+    <Content Include="GoodsShipManager.aspx" />
+    <Content Include="GoodsSortManager.aspx" />
+    <Content Include="GoodsStockAgeFenXi.aspx" />
+    <Content Include="GoodsSyStockManager.aspx" />
+    <Content Include="GroupBuyAdd.aspx" />
+    <Content Include="GroupBuyManager.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="JoinGoodsHuoDongManager.aspx" />
+    <Content Include="kindeditor\attached\image\20150915\20150915100020_1971.jpg" />
+    <Content Include="kindeditor\attached\image\20150915\20150915101522_1357.jpg" />
+    <Content Include="kindeditor\attached\image\20151217\20151217150903_8906.jpg" />
+    <Content Include="kindeditor\attached\image\20151217\20151217203406_8819.jpg" />
+    <Content Include="kindeditor\attached\image\20151217\20151217203802_4128.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218202616_4300.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218203205_4260.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218203424_6093.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218203607_8553.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218203819_0660.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218203955_1017.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218204116_6714.jpg" />
+    <Content Include="kindeditor\attached\image\20151218\20151218221013_1138.jpg" />
+    <Content Include="kindeditor\attached\image\20160114\20160114193416_3909.jpg" />
+    <Content Include="kindeditor\attached\image\20160114\20160114205144_4698.jpg" />
+    <Content Include="kindeditor\attached\image\20160114\20160114205928_2436.jpg" />
+    <Content Include="kindeditor\attached\image\20160114\20160114210337_6495.jpg" />
+    <Content Include="kindeditor\attached\image\20160119\20160119210519_7412.jpg" />
+    <Content Include="kindeditor\attached\image\20160124\20160124150154_9693.jpg" />
+    <Content Include="kindeditor\attached\image\20160124\20160124150246_5294.jpg" />
+    <Content Include="kindeditor\attached\image\20160124\20160124150343_1071.jpg" />
+    <Content Include="kindeditor\attached\image\20160124\20160124152336_7810.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604100143_1379.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604100143_2018.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604175221_3233.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604175221_4263.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604184432_3899.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604184432_4799.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604184733_1905.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604222024_5227.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604222024_5597.jpg" />
+    <Content Include="kindeditor\attached\image\20160604\20160604222024_6427.jpg" />
+    <Content Include="kindeditor\attached\image\20160605\20160605190628_4826.jpg" />
+    <Content Include="kindeditor\attached\image\20160606\20160606211029_1067.jpg" />
+    <Content Include="kindeditor\attached\image\20160606\20160606211029_2047.jpg" />
+    <Content Include="kindeditor\attached\image\20160606\20160606211405_6042.jpg" />
+    <Content Include="kindeditor\attached\image\20160606\20160606211405_7282.jpg" />
+    <Content Include="kindeditor\attached\image\20160606\20160606221519_2149.jpg" />
+    <Content Include="kindeditor\kindeditor.js" />
+    <Content Include="kindeditor\lang\en.js" />
+    <Content Include="kindeditor\lang\zh_CN.js" />
+    <Content Include="kindeditor\plugins\anchor\anchor.js" />
+    <Content Include="kindeditor\plugins\autoheight\autoheight.js" />
+    <Content Include="kindeditor\plugins\baidumap\baidumap.js" />
+    <Content Include="kindeditor\plugins\baidumap\index.html" />
+    <Content Include="kindeditor\plugins\baidumap\map.html" />
+    <Content Include="kindeditor\plugins\clearhtml\clearhtml.js" />
+    <Content Include="kindeditor\plugins\code\code.js" />
+    <Content Include="kindeditor\plugins\code\prettify.css" />
+    <Content Include="kindeditor\plugins\code\prettify.js" />
+    <Content Include="kindeditor\plugins\emoticons\emoticons.js" />
+    <Content Include="kindeditor\plugins\emoticons\images\0.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\1.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\10.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\100.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\101.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\102.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\103.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\104.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\105.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\106.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\107.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\108.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\109.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\11.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\110.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\111.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\112.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\113.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\114.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\115.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\116.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\117.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\118.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\119.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\12.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\120.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\121.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\122.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\123.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\124.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\125.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\126.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\127.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\128.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\129.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\13.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\130.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\131.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\132.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\133.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\134.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\14.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\15.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\16.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\17.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\18.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\19.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\2.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\20.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\21.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\22.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\23.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\24.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\25.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\26.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\27.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\28.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\29.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\3.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\30.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\31.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\32.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\33.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\34.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\35.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\36.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\37.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\38.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\39.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\4.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\40.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\41.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\42.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\43.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\44.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\45.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\46.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\47.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\48.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\49.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\5.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\50.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\51.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\52.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\53.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\54.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\55.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\56.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\57.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\58.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\59.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\6.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\60.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\61.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\62.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\63.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\64.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\65.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\66.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\67.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\68.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\69.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\7.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\70.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\71.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\72.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\73.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\74.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\75.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\76.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\77.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\78.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\79.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\8.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\80.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\81.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\82.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\83.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\84.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\85.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\86.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\87.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\88.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\89.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\9.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\90.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\91.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\92.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\93.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\94.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\95.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\96.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\97.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\98.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\99.gif" />
+    <Content Include="kindeditor\plugins\emoticons\images\static.gif" />
+    <Content Include="kindeditor\plugins\filemanager\filemanager.js" />
+    <Content Include="kindeditor\plugins\filemanager\images\file-16.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\file-64.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="kindeditor\plugins\filemanager\images\go-up.gif" />
+    <Content Include="kindeditor\plugins\flash\flash.js" />
+    <Content Include="kindeditor\plugins\image\image.js" />
+    <Content Include="kindeditor\plugins\image\images\align_left.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_right.gif" />
+    <Content Include="kindeditor\plugins\image\images\align_top.gif" />
+    <Content Include="kindeditor\plugins\image\images\refresh.png" />
+    <Content Include="kindeditor\plugins\insertfile\insertfile.js" />
+    <Content Include="kindeditor\plugins\lineheight\lineheight.js" />
+    <Content Include="kindeditor\plugins\link\link.js" />
+    <Content Include="kindeditor\plugins\map\map.html" />
+    <Content Include="kindeditor\plugins\map\map.js" />
+    <Content Include="kindeditor\plugins\media\media.js" />
+    <Content Include="kindeditor\plugins\multiimage\images\image.png" />
+    <Content Include="kindeditor\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="kindeditor\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="kindeditor\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="kindeditor\plugins\multiimage\multiimage.js" />
+    <Content Include="kindeditor\plugins\pagebreak\pagebreak.js" />
+    <Content Include="kindeditor\plugins\plainpaste\plainpaste.js" />
+    <Content Include="kindeditor\plugins\preview\preview.js" />
+    <Content Include="kindeditor\plugins\quickformat\quickformat.js" />
+    <Content Include="kindeditor\plugins\table\table.js" />
+    <Content Include="kindeditor\plugins\template\html\1.html" />
+    <Content Include="kindeditor\plugins\template\html\2.html" />
+    <Content Include="kindeditor\plugins\template\html\3.html" />
+    <Content Include="kindeditor\plugins\template\template.js" />
+    <Content Include="kindeditor\plugins\wordpaste\wordpaste.js" />
+    <Content Include="kindeditor\themes\common\anchor.gif" />
+    <Content Include="kindeditor\themes\common\blank.gif" />
+    <Content Include="kindeditor\themes\common\flash.gif" />
+    <Content Include="kindeditor\themes\common\loading.gif" />
+    <Content Include="kindeditor\themes\common\media.gif" />
+    <Content Include="kindeditor\themes\common\rm.gif" />
+    <Content Include="kindeditor\themes\default\background.png" />
+    <Content Include="kindeditor\themes\default\default.css" />
+    <Content Include="kindeditor\themes\default\default.png" />
+    <Content Include="kindeditor\themes\qq\editor.gif" />
+    <Content Include="kindeditor\themes\qq\qq.css" />
+    <Content Include="kindeditor\themes\simple\simple.css" />
+    <Content Include="Login.aspx" />
+    <Content Include="MemberAllFenXiaoTop.aspx" />
+    <Content Include="MemberBuyTop.aspx" />
+    <Content Include="MemberExtractReport.aspx" />
+    <Content Include="MemberFenXiaoTop.aspx" />
+    <Content Include="MemberJiBieFenXi.aspx" />
+    <Content Include="MemberManager.aspx" />
+    <Content Include="MenuList.ascx" />
+    <Content Include="MessageViewManager.aspx" />
+    <Content Include="NewAdAdd.aspx" />
+    <Content Include="NewsCommentManager.aspx" />
+    <Content Include="NewsNoticesAdd.aspx" />
+    <Content Include="NewsNoticesManager.aspx" />
+    <Content Include="NewsSortManager.aspx" />
+    <Content Include="OrderListManager.aspx" />
+    <Content Include="OrdersDetails.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="EnshineUnionHandler.ashx" />
+    <Content Include="EnshineUnion.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>EnshineUnion.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="model\FenXiaoExtractList.xls" />
+    <Content Include="model\FinanceMonthList.xls" />
+    <Content Include="model\MemberExtractList.xls" />
+    <Content Include="model\orderlist.xls" />
+    <Content Include="model\tuanorderlist.xls" />
+    <Content Include="model\userrecharge.xls" />
+    <Content Include="kindeditor\asp.net\file_manager_json.ashx" />
+    <Content Include="kindeditor\asp.net\upload_json.ashx" />
+    <Content Include="assets\css\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="assets\css\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="assets\css\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="UserAgeSexTotal.aspx" />
+    <Content Include="UserAreaTotal.aspx" />
+    <Content Include="UserOrderSalesFenXi.aspx" />
+    <Content Include="UserOrderTypeFenXi.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="model\cocheckreport.xls" />
+    <Content Include="model\goodshipreport.xls" />
+    <Content Include="model\HotSkuExport.xls" />
+    <None Include="Properties\PublishProfiles\East.pubxml" />
+    <None Include="Properties\PublishProfiles\EnshineUnion.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Aspose.Cells.dll" />
+    <Content Include="bin\LitJSON.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="PerfectUserInfo.aspx" />
+    <Content Include="plugins\msgbox\images\alert.png" />
+    <Content Include="plugins\msgbox\images\background.png" />
+    <Content Include="plugins\msgbox\images\confirm.png" />
+    <Content Include="plugins\msgbox\images\error.png" />
+    <Content Include="plugins\msgbox\images\info.png" />
+    <Content Include="plugins\msgbox\images\question.png" />
+    <Content Include="plugins\msgbox\jquery.msgbox.css" />
+    <Content Include="plugins\msgbox\jquery.msgbox.min.js" />
+    <Content Include="plugins\uniform\css\uniform.default.css" />
+    <Content Include="plugins\uniform\images\bg-input-focus.png" />
+    <Content Include="plugins\uniform\images\bg-input.png" />
+    <Content Include="plugins\uniform\images\sprite.png" />
+    <Content Include="plugins\uniform\jquery.uniform.min.js" />
+    <Content Include="plugins\validate\jquery.validate.min.js" />
+    <Content Include="Properties\PublishProfiles\East.pubxml.user" />
+    <Content Include="UpLoadImg\CardImage\6c938362-13de-424c-99c9-fdab5305f827.jpg" />
+    <Content Include="UpLoadImg\CardImage\91773e36-0f10-4797-b0cc-d4357a4d6e50.jpg" />
+    <Content Include="UpLoadImg\GoodsImage\b5db820c-8f55-4b5a-9f0e-b40214136daa.jpg" />
+    <Content Include="UpLoadImg\GoodsImage\ff3ce8c7-fbc0-4ed7-915a-9b131759ee72.jpg" />
+    <Content Include="UpLoadImg\HuodongImage\9cd9359d-077b-40ea-9ae9-8beb98f545ff.jpg" />
+    <Content Include="UpLoadImg\NoticesImage\0d2ed048-1526-4fa9-a957-a182bd4d098d.jpg" />
+    <Content Include="UpLoadImg\NoticesImage\4f71ffe5-9df2-4aed-bbe9-dcfc593f8439.jpg" />
+    <Content Include="UpLoadImg\NoticesImage\82945dd1-ed0e-4dce-b50a-001e1e866863.jpg" />
+    <Content Include="UpLoadImg\NoticesImage\b21354d1-9942-4fed-a90a-6eb4c571e8bd.jpg" />
+    <Content Include="UpLoadImg\NoticesImage\fed2419c-ba3c-4afe-a022-067b2d5efcb0.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\096022f4-5dcc-48db-83c3-b0bb0d3bfd7a.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\17a0c336-49ce-4611-876b-4fecf719eeb0.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\2225eeef-8937-4074-aff5-5b4ac293547f.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\2a114d7f-67a0-4d84-9fed-ca5c32fc70ca.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\576aa724-bf3a-4412-866b-640d94b9a780.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\63ff22c6-8f03-4803-a3ec-57e1ef63a515.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\807ee5d4-c16f-46dd-a49a-70aa2a71090f.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\90207d46-2926-48eb-ab3f-92455e08622c.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\9de71fea-6dae-4013-8d5f-88850b96d56a.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\a3ee01c8-cb1b-40a8-85c6-ece769a38c89.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\b966f468-99ee-49aa-bce4-bd6d803954ae.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\e54df83c-f17b-4b7d-a6ac-c1890cc6e5a6.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\efc49476-325b-4da0-b133-a583e6863860.jpg" />
+    <Content Include="UpLoadImg\PlantDoctorSortImg\ff369c52-be73-4b56-bd19-a5d95ea7d1fc.jpg" />
+    <Content Include="UserExtractMoenyManager.aspx" />
+    <Content Include="UserInfoManager.aspx" />
+    <Content Include="UserRecharge.aspx" />
+    <Content Include="UserRechargeAdd.aspx" />
+    <Content Include="UserRoleManager.aspx" />
+    <Content Include="UserRoleSet.aspx" />
+    <Content Include="ValidateCode.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdManager.aspx.cs">
+      <DependentUpon>AdManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdManager.aspx.designer.cs">
+      <DependentUpon>AdManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditInfo.aspx.cs">
+      <DependentUpon>AdminEditInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEditInfo.aspx.designer.cs">
+      <DependentUpon>AdminEditInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManager.aspx.cs">
+      <DependentUpon>AdminManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager.aspx.designer.cs">
+      <DependentUpon>AdminManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoCheckExport.aspx.cs">
+      <DependentUpon>CoCheckExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoCheckExport.aspx.designer.cs">
+      <DependentUpon>CoCheckExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EnshineUnion.cs">
+      <DependentUpon>EnshineUnion.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EnshineUnion.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnshineUnion.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EnshineUnionHandler.ashx.cs">
+      <DependentUpon>EnshineUnionHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="FenXiaoExtractRport.aspx.cs">
+      <DependentUpon>FenXiaoExtractRport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FenXiaoExtractRport.aspx.designer.cs">
+      <DependentUpon>FenXiaoExtractRport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceMonthReport.aspx.cs">
+      <DependentUpon>FinanceMonthReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinanceMonthReport.aspx.designer.cs">
+      <DependentUpon>FinanceMonthReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodAreaSalesTotal.aspx.cs">
+      <DependentUpon>GoodAreaSalesTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodAreaSalesTotal.aspx.designer.cs">
+      <DependentUpon>GoodAreaSalesTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsAdd.aspx.cs">
+      <DependentUpon>GoodsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsAdd.aspx.designer.cs">
+      <DependentUpon>GoodsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodSalesSearchTotal.aspx.cs">
+      <DependentUpon>GoodSalesSearchTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodSalesSearchTotal.aspx.designer.cs">
+      <DependentUpon>GoodSalesSearchTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodSalesTotal.aspx.cs">
+      <DependentUpon>GoodSalesTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodSalesTotal.aspx.designer.cs">
+      <DependentUpon>GoodSalesTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDeliveryManager.aspx.cs">
+      <DependentUpon>GoodsDeliveryManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsDeliveryManager.aspx.designer.cs">
+      <DependentUpon>GoodsDeliveryManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsInWareHouse.aspx.cs">
+      <DependentUpon>GoodsInWareHouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsInWareHouse.aspx.designer.cs">
+      <DependentUpon>GoodsInWareHouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsManager.aspx.cs">
+      <DependentUpon>GoodsManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsManager.aspx.designer.cs">
+      <DependentUpon>GoodsManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodSortSalesTotal.aspx.cs">
+      <DependentUpon>GoodSortSalesTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodSortSalesTotal.aspx.designer.cs">
+      <DependentUpon>GoodSortSalesTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsPackageAdd.aspx.cs">
+      <DependentUpon>GoodsPackageAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsPackageAdd.aspx.designer.cs">
+      <DependentUpon>GoodsPackageAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsPackageManager.aspx.cs">
+      <DependentUpon>GoodsPackageManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsPackageManager.aspx.designer.cs">
+      <DependentUpon>GoodsPackageManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsShipManager.aspx.cs">
+      <DependentUpon>GoodsShipManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsShipManager.aspx.designer.cs">
+      <DependentUpon>GoodsShipManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsSortManager.aspx.cs">
+      <DependentUpon>GoodsSortManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsSortManager.aspx.designer.cs">
+      <DependentUpon>GoodsSortManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsStockAgeFenXi.aspx.cs">
+      <DependentUpon>GoodsStockAgeFenXi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsStockAgeFenXi.aspx.designer.cs">
+      <DependentUpon>GoodsStockAgeFenXi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsSyStockManager.aspx.cs">
+      <DependentUpon>GoodsSyStockManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoodsSyStockManager.aspx.designer.cs">
+      <DependentUpon>GoodsSyStockManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBuyAdd.aspx.cs">
+      <DependentUpon>GroupBuyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupBuyAdd.aspx.designer.cs">
+      <DependentUpon>GroupBuyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupBuyManager.aspx.cs">
+      <DependentUpon>GroupBuyManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupBuyManager.aspx.designer.cs">
+      <DependentUpon>GroupBuyManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinGoodsHuoDongManager.aspx.cs">
+      <DependentUpon>JoinGoodsHuoDongManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinGoodsHuoDongManager.aspx.designer.cs">
+      <DependentUpon>JoinGoodsHuoDongManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAllFenXiaoTop.aspx.cs">
+      <DependentUpon>MemberAllFenXiaoTop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberAllFenXiaoTop.aspx.designer.cs">
+      <DependentUpon>MemberAllFenXiaoTop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberBuyTop.aspx.cs">
+      <DependentUpon>MemberBuyTop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberBuyTop.aspx.designer.cs">
+      <DependentUpon>MemberBuyTop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberExtractReport.aspx.cs">
+      <DependentUpon>MemberExtractReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberExtractReport.aspx.designer.cs">
+      <DependentUpon>MemberExtractReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberFenXiaoTop.aspx.cs">
+      <DependentUpon>MemberFenXiaoTop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberFenXiaoTop.aspx.designer.cs">
+      <DependentUpon>MemberFenXiaoTop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberJiBieFenXi.aspx.cs">
+      <DependentUpon>MemberJiBieFenXi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberJiBieFenXi.aspx.designer.cs">
+      <DependentUpon>MemberJiBieFenXi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberManager.aspx.cs">
+      <DependentUpon>MemberManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberManager.aspx.designer.cs">
+      <DependentUpon>MemberManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuList.ascx.cs">
+      <DependentUpon>MenuList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuList.ascx.designer.cs">
+      <DependentUpon>MenuList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageViewManager.aspx.cs">
+      <DependentUpon>MessageViewManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageViewManager.aspx.designer.cs">
+      <DependentUpon>MessageViewManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="model\JsonHelper.cs" />
+    <Compile Include="model\SearchDataClass.cs" />
+    <Compile Include="NewAdAdd.aspx.cs">
+      <DependentUpon>NewAdAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewAdAdd.aspx.designer.cs">
+      <DependentUpon>NewAdAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCommentManager.aspx.cs">
+      <DependentUpon>NewsCommentManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsCommentManager.aspx.designer.cs">
+      <DependentUpon>NewsCommentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsNoticesAdd.aspx.cs">
+      <DependentUpon>NewsNoticesAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsNoticesAdd.aspx.designer.cs">
+      <DependentUpon>NewsNoticesAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsNoticesManager.aspx.cs">
+      <DependentUpon>NewsNoticesManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsNoticesManager.aspx.designer.cs">
+      <DependentUpon>NewsNoticesManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsSortManager.aspx.cs">
+      <DependentUpon>NewsSortManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsSortManager.aspx.designer.cs">
+      <DependentUpon>NewsSortManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderListManager.aspx.cs">
+      <DependentUpon>OrderListManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderListManager.aspx.designer.cs">
+      <DependentUpon>OrderListManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersDetails.aspx.cs">
+      <DependentUpon>OrdersDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdersDetails.aspx.designer.cs">
+      <DependentUpon>OrdersDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfectUserInfo.aspx.cs">
+      <DependentUpon>PerfectUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfectUserInfo.aspx.designer.cs">
+      <DependentUpon>PerfectUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserAgeSexTotal.aspx.cs">
+      <DependentUpon>UserAgeSexTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAgeSexTotal.aspx.designer.cs">
+      <DependentUpon>UserAgeSexTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAreaTotal.aspx.cs">
+      <DependentUpon>UserAreaTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAreaTotal.aspx.designer.cs">
+      <DependentUpon>UserAreaTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserExtractMoenyManager.aspx.cs">
+      <DependentUpon>UserExtractMoenyManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserExtractMoenyManager.aspx.designer.cs">
+      <DependentUpon>UserExtractMoenyManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoManager.aspx.cs">
+      <DependentUpon>UserInfoManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfoManager.aspx.designer.cs">
+      <DependentUpon>UserInfoManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserOrderSalesFenXi.aspx.cs">
+      <DependentUpon>UserOrderSalesFenXi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserOrderSalesFenXi.aspx.designer.cs">
+      <DependentUpon>UserOrderSalesFenXi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserOrderTypeFenXi.aspx.cs">
+      <DependentUpon>UserOrderTypeFenXi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserOrderTypeFenXi.aspx.designer.cs">
+      <DependentUpon>UserOrderTypeFenXi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRecharge.aspx.cs">
+      <DependentUpon>UserRecharge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRecharge.aspx.designer.cs">
+      <DependentUpon>UserRecharge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRechargeAdd.aspx.cs">
+      <DependentUpon>UserRechargeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRechargeAdd.aspx.designer.cs">
+      <DependentUpon>UserRechargeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRoleManager.aspx.cs">
+      <DependentUpon>UserRoleManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRoleManager.aspx.designer.cs">
+      <DependentUpon>UserRoleManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRoleSet.aspx.cs">
+      <DependentUpon>UserRoleSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRoleSet.aspx.designer.cs">
+      <DependentUpon>UserRoleSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EnshineUnion.dbml.layout">
+      <DependentUpon>EnshineUnion.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\roslyn\" />
+    <Folder Include="plugins\uploadify\" />
+    <Folder Include="UpLoadImg\AdImage\" />
+    <Folder Include="UpLoadImg\GroupBuyImage\" />
+    <Folder Include="UpLoadImg\HeadImage\" />
+    <Folder Include="UpLoadImg\PlantDoctorImage\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51514</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51514/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

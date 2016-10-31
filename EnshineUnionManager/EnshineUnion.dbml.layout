@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20.25, 22" name="EnshineUnion">
+  <DataContextMoniker Name="/EnshineUnionDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5b1c451f-84af-4603-9cb4-051eab259d24" absoluteBounds="0.75, 0.75, 2, 2.4612756347656251">
+      <DataClassMoniker Name="/EnshineUnionDataContext/areas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="985508ac-3cf7-4a8a-85b3-fefabc3e146d" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.901275634765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7b059bd-ae0d-4b10-a7e5-79a84afbddaa" absoluteBounds="3.75, 0.75, 2, 1.3525109863281251">
+      <DataClassMoniker Name="/EnshineUnionDataContext/extractlist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a0e1658-ef0e-4678-84fe-5d530c850959" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b04257a5-4e1a-45f3-a301-b585e0181810" absoluteBounds="6.75, 7.75, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/EnshineUnionDataContext/memberextract" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40083d58-a1c7-485d-a006-7c74f751f568" absoluteBounds="6.765, 8.21, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="214a0168-7168-4f0f-9458-7705141c7be3" absoluteBounds="9.75, 0.75, 2, 1.5373050944010416">
+      <DataClassMoniker Name="/EnshineUnionDataContext/memberset" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fc2eeb6-7dee-44ef-bbd8-9d0615e2726d" absoluteBounds="9.765, 1.21, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b4dd795-8150-4b79-ac5c-a1ca0b0a924e" absoluteBounds="3.75, 10.75, 2, 1.3525109863281237">
+      <DataClassMoniker Name="/EnshineUnionDataContext/noticessort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3c4d3f9-26de-420b-8048-7878c0270d50" absoluteBounds="3.765, 11.21, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d7fa430-d70b-43e5-b2f7-9aa3ab8db220" absoluteBounds="6.75, 10.75, 2, 2.8308638509114559">
+      <DataClassMoniker Name="/EnshineUnionDataContext/orders" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8594b17-225d-457a-8251-b54bbd8966e8" absoluteBounds="6.765, 11.21, 1.9700000000000002, 2.270863850911458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32e95d86-1446-470f-862d-7b08b6717a10" absoluteBounds="12.75, 0.75, 2, 2.2764815266927085">
+      <DataClassMoniker Name="/EnshineUnionDataContext/plantdoctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30b192a0-05fc-4f9c-b047-e9a873ac9a6d" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57cc499b-ec1b-4b91-906b-6e6671e021f1" absoluteBounds="12.75, 4.75, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/EnshineUnionDataContext/plantdoctorsort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6be9ae8-8f0c-4438-83f4-7671256cea5a" absoluteBounds="12.765, 5.21, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="559234b1-982c-4976-a27f-76930a3c0e47" absoluteBounds="0.75, 13.75, 2, 2.2764815266927094">
+      <DataClassMoniker Name="/EnshineUnionDataContext/userrecharge" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c571612-1a8b-4c1e-9602-3a51e7ef9206" absoluteBounds="0.765, 14.21, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="018aa1f9-c90f-435d-86fb-ea05b4087e86" absoluteBounds="0.75, 16.125, 2, 2.4612756347656237">
+      <DataClassMoniker Name="/EnshineUnionDataContext/shopset" />
+      <nestedChildShapes>
+        <elementListCompartment Id="73b1dcd2-d3b8-4671-b021-f738ec8ad8c1" absoluteBounds="0.76500000000000012, 16.585, 1.9700000000000002, 1.901275634765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8870ac99-f35f-400a-b965-ccac4a147e1f" absoluteBounds="6.75, 14.75, 2, 1.9068933105468737">
+      <DataClassMoniker Name="/EnshineUnionDataContext/goodssort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3376ea70-90f0-4a05-98be-ff4e3fb2913d" absoluteBounds="6.765, 15.21, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a971041-e941-4821-a580-3c74d5796109" absoluteBounds="15.75, 0.75, 2, 2.2764815266927085">
+      <DataClassMoniker Name="/EnshineUnionDataContext/Advertisement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed267eb4-dcde-4a8f-aa8c-26a97681a2c5" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a09739f2-d6bd-40a5-b0ed-98011ccbb13f" absoluteBounds="10.125, 3.25, 2, 2.2764815266927085">
+      <DataClassMoniker Name="/EnshineUnionDataContext/moenydetails" />
+      <nestedChildShapes>
+        <elementListCompartment Id="904a40c2-f98f-4d4a-bb71-b75d9a80060c" absoluteBounds="10.14, 3.71, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76c906c7-d39f-483f-a4a3-c302afd4ef77" absoluteBounds="12.875, 7.875, 2, 1.9068933105468751">
+      <DataClassMoniker Name="/EnshineUnionDataContext/pointdetails" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42ef8d91-f0dd-4d01-bc80-5f0747cd97b9" absoluteBounds="12.89, 8.335, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5db78eb-d126-4604-a733-4f92663471af" absoluteBounds="0.875, 9.625, 2, 2.2764815266927085">
+      <DataClassMoniker Name="/EnshineUnionDataContext/menulist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f3c0d0c-ac1b-4cb1-9e64-4e9e7d2c94d6" absoluteBounds="0.88999999999999968, 10.085, 1.9700000000000002, 1.7164815266927085" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c58d4f46-0ad9-4ed6-bfbb-6b5309c87768" absoluteBounds="12.375, 11.25, 2, 2.8308638509114581">
+      <DataClassMoniker Name="/EnshineUnionDataContext/superadmin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fddd9b85-18c9-4cee-9b39-beb24ef89fb4" absoluteBounds="12.39, 11.71, 1.9700000000000002, 2.270863850911458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e4df17f-d18b-4a6d-86e8-2c7da3cbab01" absoluteBounds="12.25, 14.875, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/EnshineUnionDataContext/userrole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8522911d-8384-47c5-a8bc-b5afbccf81ee" absoluteBounds="12.265, 15.335, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3828ba99-cf85-43f3-a167-93f79e87b5f4" absoluteBounds="4.375, 13, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/EnshineUnionDataContext/noticesdiscuss" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29ebb1aa-9a6d-45f3-94d7-3be8c257d705" absoluteBounds="4.39, 13.46, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9748628a-0497-45b1-8a9f-eebe6707510c" absoluteBounds="4.375, 14.75, 2, 1.5373050944010416">
+      <DataClassMoniker Name="/EnshineUnionDataContext/noticeslikes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b78ccdfd-e3e5-4af1-a8f0-88ab2c959fa5" absoluteBounds="4.39, 15.21, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ae1dcf06-4b5a-4594-8fea-14407323f80c" absoluteBounds="10.125, 6.5, 2, 3.3852461751302081">
+      <DataClassMoniker Name="/EnshineUnionDataContext/notices" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42618671-42da-417d-ac06-29437b50321f" absoluteBounds="10.14, 6.96, 1.9700000000000002, 2.825246175130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b3772cb-7825-4cc3-8d3f-6cf222c45cf0" absoluteBounds="4.125, 16.625, 2, 1.3525109863281251">
+      <DataClassMoniker Name="/EnshineUnionDataContext/HuoDongSort" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d27e694c-ddeb-41c1-a8c1-5863a1828c92" absoluteBounds="4.14, 17.085, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b5e49da-2d9d-4e0a-b377-de648e6687d9" absoluteBounds="6.75, 16.75, 2, 1.7220992024739581">
+      <DataClassMoniker Name="/EnshineUnionDataContext/JoinHuoDong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfc95de7-1acc-4084-a709-ea50d3e93ac4" absoluteBounds="6.765, 17.21, 1.9700000000000002, 1.1620992024739583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c7e8ac1-456b-413d-b874-ac1c5ab21a62" absoluteBounds="6.75, 18.5, 2, 3.2004520670572916">
+      <DataClassMoniker Name="/EnshineUnionDataContext/JoinHuoDongInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="062f1889-ce69-436b-87ec-99b69e451168" absoluteBounds="6.765, 18.96, 1.9700000000000002, 2.6404520670572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6da48ec8-03a6-4de0-8884-27ce4429b3bc" absoluteBounds="4.25, 18.25, 2, 2.8308638509114581">
+      <DataClassMoniker Name="/EnshineUnionDataContext/HuoDong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb55bcb2-2ab4-456a-b01f-417e2a6a5ea8" absoluteBounds="4.265, 18.71, 1.9700000000000002, 2.270863850911458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f84812f-f16a-4973-bab9-2165ef57fa23" absoluteBounds="9.375, 11.75, 2, 3.2004520670572916">
+      <DataClassMoniker Name="/EnshineUnionDataContext/ordersdetails" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae93baf4-c488-425b-94e8-6401fc907406" absoluteBounds="9.39, 12.21, 1.9700000000000002, 2.6404520670572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee878b07-543d-4601-bcdd-55468d98f18c" absoluteBounds="15.25, 13, 2, 6.5267460123697907">
+      <DataClassMoniker Name="/EnshineUnionDataContext/goods" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9b67a78-550c-467f-8a4d-18ceeedc0f5c" absoluteBounds="15.265, 13.46, 1.9700000000000002, 5.9667460123697911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6daf1d04-ca60-44b4-a08d-51fd328423f9" absoluteBounds="15.625, 5, 2, 8.1898929850260416">
+      <DataClassMoniker Name="/EnshineUnionDataContext/UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7678a842-aeba-46f9-b990-c5301136a4d2" absoluteBounds="15.64, 5.46, 1.9700000000000002, 7.629892985026042" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d58aa41-6596-42b2-a6c2-c4434e82a43a" absoluteBounds="18, 14.375, 2, 5.6027754720052076">
+      <DataClassMoniker Name="/EnshineUnionDataContext/goodstuan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52fdecf1-6f9a-41af-ad35-a6be1059a26b" absoluteBounds="18.015, 14.835, 1.9700000000000002, 5.042775472005208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d9d2da5-a0e9-4db7-b96b-845165871b86" absoluteBounds="6.5, 0.875, 2, 1.5373050944010416">
+      <DataClassMoniker Name="/EnshineUnionDataContext/goodtypelikes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8246ee78-07f5-4986-aef4-d688f666bfb6" absoluteBounds="6.515, 1.335, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="caddbf78-edae-4b45-9f36-8c1e636fdcbb" absoluteBounds="4.5, 3, 2, 1.9068933105468751">
+      <DataClassMoniker Name="/EnshineUnionDataContext/messageview" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75e5b122-5d49-4444-9802-3918ec721db0" absoluteBounds="4.515, 3.46, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0db2e89-e49b-4fad-a6cb-fe6c93ceceba" absoluteBounds="7.5, 2.875, 2, 6.5267460123697907">
+      <DataClassMoniker Name="/EnshineUnionDataContext/goodspackage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06e31dfe-ba5f-42a9-a1cf-db9858d6cccb" absoluteBounds="7.515, 3.335, 1.9700000000000002, 5.9667460123697911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
